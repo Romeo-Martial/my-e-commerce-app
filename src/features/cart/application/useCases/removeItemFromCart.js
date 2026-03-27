@@ -2,7 +2,7 @@ import { Result } from "../../../_shared/domain/result";
 import { DomainError } from "../../../_shared/domain/domainError";
 import { Sku } from "../../domain/valueObjects/sku";
 
-export class RemoveItemFromCart {
+export class RemoveItemFromCartUseCase {
   constructor(cartRepository) {
     if (!cartRepository) {
       throw new Error("cartRepository is required");

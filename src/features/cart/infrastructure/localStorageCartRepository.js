@@ -2,7 +2,7 @@ import { CartRepository } from "../application/ports/cartRepository";
 import { Cart } from "../domain/cart";
 import { CartId } from "../domain/valueObjects/cartId";
 import { CartLine } from "../domain/cartLine";
-import { Money } from "../domain/valueObjects/money";
+import { Money } from "../../_shared/domain/money";
 import { Quantity } from "../domain/valueObjects/quantity";
 import { Sku } from "../domain/valueObjects/sku";
 

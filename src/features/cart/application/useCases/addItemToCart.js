@@ -4,7 +4,7 @@ import { Sku } from "../../domain/valueObjects/sku";
 import { Quantity } from "../../domain/valueObjects/quantity";
 import { Money } from "../../../_shared/domain/money";
 
-export class AddItemToCart {
+export class AddItemToCartUseCase {
   constructor(cartRepository) {
     if (!cartRepository) {
       throw new Error("cartRepository is required");

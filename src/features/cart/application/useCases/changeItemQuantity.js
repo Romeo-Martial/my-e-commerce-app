@@ -3,7 +3,7 @@ import { DomainError } from "../../../_shared/domain/domainError";
 import { Sku } from "../../domain/valueObjects/sku";
 import { Quantity } from "../../domain/valueObjects/quantity";
 
-export class ChangeItemQuantity {
+export class ChangeItemQuantityUseCase {
   constructor(cartRepository) {
     if (!cartRepository) {
       throw new Error("cartRepository is required");

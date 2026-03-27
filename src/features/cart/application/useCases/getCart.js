@@ -1,7 +1,7 @@
 import { Result } from "../../../_shared/domain/result";
 import { DomainError } from "../../../_shared/domain/domainError";
 
-export class GetCart {
+export class GetCartUseCase {
   constructor(cartRepository) {
     if (!cartRepository) {
       throw new Error("cartRepository is required");
