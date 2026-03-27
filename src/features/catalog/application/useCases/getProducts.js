@@ -1,7 +1,7 @@
 import { Result } from "../../../_shared/domain/result";
 import { DomainError } from "../../../_shared/domain/domainError";
 
-export class GetProducts {
+export class GetProductsUseCase {
   constructor(catalogRepository) {
     if (!catalogRepository) {
       throw new Error("productRepository is required");
