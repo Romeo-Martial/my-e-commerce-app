@@ -4,7 +4,7 @@ import { CheckoutDraft } from "../../domain/checkoutDraft";
 import { CheckoutId } from "../../domain/valueObjects/checkoutId";
 import { CartId } from "../../../cart/domain/valueObjects/cartId";
 
-export class StartCheckout {
+export class StartCheckoutUseCase {
   constructor(checkoutRepository) {
     if (!checkoutRepository) {
       throw new Error("checkoutRepository is required");

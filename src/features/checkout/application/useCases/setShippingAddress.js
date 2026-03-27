@@ -2,7 +2,7 @@ import { Result } from "../../../_shared/domain/result";
 import { DomainError } from "../../../_shared/domain/domainError";
 import { ShippingAddress } from "../../domain/valueObjects/shippingAddress";
 
-export class SetShippingAddress {
+export class SetShippingAddressUseCase {
   constructor(checkoutRepository) {
     if (!checkoutRepository) {
       throw new Error("checkoutRepository is required");

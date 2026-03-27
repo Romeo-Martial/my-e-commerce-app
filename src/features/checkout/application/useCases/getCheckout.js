@@ -1,7 +1,7 @@
 import { Result } from "../../../_shared/domain/result";
 import { DomainError } from "../../../_shared/domain/domainError";
 
-export class GetCheckout {
+export class GetCheckoutUseCase {
   constructor(checkoutRepository) {
     if (!checkoutRepository) {
       throw new Error("checkoutRepository is required");

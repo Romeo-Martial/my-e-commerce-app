@@ -2,7 +2,7 @@ import { Result } from "../../../_shared/domain/result";
 import { DomainError } from "../../../_shared/domain/domainError";
 import { PaymentMethod } from "../../domain/valueObjects/paymentMethod";
 
-export class SetPaymentMethod {
+export class SetPaymentMethodUseCase {
   constructor(checkoutRepository) {
     if (!checkoutRepository) {
       throw new Error("checkoutRepository is required");
