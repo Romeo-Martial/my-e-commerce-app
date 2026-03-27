@@ -1,0 +1,39 @@
+import { Result } from "../../../_shared/domain/result";
+import { DomainError } from "../../../_shared/domain/domainError";
+import { Sku } from "../../domain/valueObjects/sku";
+import { Quantity } from "../../domain/valueObjects/quantity";
+import { Money } from "../../../_shared/domain/money";
+
+export class AddItemToCart {
+  constructor(cartRepository) {
+    if (!cartRepository) {
+      throw new Error("cartRepository is required");
+    }
+
+    this.cartRepository = cartRepository;
+  }
+
+  execute({ sku, quantity, unitPriceAmount, currency }) {
+    try {
+      const cart = this.cartRepository.getCart();
+
+      const domainSku = new Sku(sku);
+      const domainQuantity = new Quantity(quantity);
+      const domainUnitPrice = new Money(unitPriceAmount, currency);
+
+      const updatedCart = cart.addItem(
+        domainSku,
+        domainQuantity,
+        domainUnitPrice,
+      );
+
+      this.cartRepository.save(updatedCart);
+
+      return Result.success(updatedCart);
+    } catch (err) {
+      return Result.failure(
+        new DomainError("ADD_ITEM_TO_CART_FAILED", err.message),
+      );
+    }
+  }
+}
