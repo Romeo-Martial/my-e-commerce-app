@@ -1,16 +1,80 @@
-# React + Vite
+# Shopping Cart Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite e-commerce frontend built to demonstrate more than UI assembly.
+This project showcases how I structure a frontend application around clear feature boundaries, business rules, and maintainable architecture.
 
-Currently, two official plugins are available:
+## What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Browse a product catalog
+* Add, remove, and update cart items
+* Review cart totals
+* Complete a checkout flow
+* View order confirmation
 
-## React Compiler
+## Why this project matters
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project was built as a portfolio piece to show that I can:
 
-## Expanding the ESLint configuration
+* build React applications with a clear architecture
+* separate UI concerns from business logic
+* model domain concepts explicitly
+* organize code for scalability and maintainability
+* write frontend code that is easier to extend and refactor
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Architecture highlights
+
+The codebase is organized by feature and layered to keep responsibilities clear:
+
+* Domain: business rules and value objects
+* Application: use cases and workflows
+* Infrastructure: persistence and external details
+* UI: React components, context, hooks, and pages
+
+This keeps business behavior out of components and makes the system easier to evolve.
+
+## Tech stack
+
+* React
+* Vite
+* React Router
+* JavaScript
+* CSS
+* ESLint
+
+## What this demonstrates
+
+* feature-based frontend architecture
+* Clean Architecture / DDD-inspired thinking
+* use-case-driven design
+* reusable UI building blocks
+* repository pattern and dependency injection
+* separation of concerns in a React application
+
+## Project structure
+
+```text
+src/
+├── application/
+├── features/
+│   ├── cart/
+│   ├── catalog/
+│   ├── checkout/
+│   └── order/
+├── shared/
+├── styles/
+└── assets/
+```
+
+Each feature owns its own domain, application, infrastructure, and UI code.
+
+## Next improvements
+
+* automated tests
+* improved accessibility
+* stronger error handling
+* TypeScript migration
+
+## Summary
+
+This project reflects how I want to contribute on a professional team:
+by building frontend systems that are not only functional, but also well-structured, scalable, and easier to maintain.
