@@ -2,7 +2,7 @@ import { ProductId } from "./valueObjects/productId";
 import { ProductName } from "./valueObjects/productName";
 import { ProductImageUrl } from "./valueObjects/productImageUrl";
 import { ProductCategory } from "./valueObjects/productCategory";
-import { Money } from "../../_shared/domain/valueObjects/money";
+import { Money } from "../../_shared/domain/money";
 
 export class Product {
   constructor({ id, name, price, imageUrl, category }) {

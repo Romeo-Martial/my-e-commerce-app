@@ -1,5 +1,5 @@
 import { ProductCard } from "./ProductCard";
-import "./ProductList.css";
+import "./productList.css";
 
 export function ProductList({ products, onAddToCart }) {
   return (

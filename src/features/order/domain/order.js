@@ -3,7 +3,7 @@ import { OrderStatus } from "./valueObjects/orderStatus";
 import { OrderLine } from "./orderLine";
 import { ShippingAddress } from "../../checkout/domain/valueObjects/shippingAddress";
 import { PaymentMethod } from "../../checkout/domain/valueObjects/paymentMethod";
-import { Money } from "../../cart/domain/valueObjects/money";
+import { Money } from "../../_shared/domain/money";
 
 export class Order {
   constructor({

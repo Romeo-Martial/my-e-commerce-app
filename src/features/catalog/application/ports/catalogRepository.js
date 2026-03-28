@@ -1,9 +1,6 @@
 export class CatalogRepository {
-  constructor(repository) {
-    if (!repository) {
-      throw new Error("repository is required");
-    }
-    this.repository = repository;
+  constructor() {
+    // Abstract base class - no parameters needed
   }
   async getProducts() {
     throw new Error("repository must be implemented");

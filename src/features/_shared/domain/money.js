@@ -1,4 +1,4 @@
-import { Quantity } from "./cart/valueObjects/quantity.js";
+import { Quantity } from "../../../features/cart/domain/valueObjects/quantity";
 
 export class Money {
   constructor(amount, currency) {
