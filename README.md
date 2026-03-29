@@ -1,4 +1,4 @@
-# Shopping Cart Application
+# E-commerce shop
 
 A React + Vite e-commerce frontend built to demonstrate more than UI assembly.
 This project showcases how I structure a frontend application around clear feature boundaries, business rules, and maintainable architecture.
